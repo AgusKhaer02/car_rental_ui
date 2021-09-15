@@ -79,7 +79,7 @@ class CarItem extends StatelessWidget {
                         height: 50,
                         child: ElevatedButton(
                           onPressed: () {
-                            Navigator.of(context).push(DetailCarsRoute());
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => DetailCars()));
                           },
                           child: Text(
                             "Details",

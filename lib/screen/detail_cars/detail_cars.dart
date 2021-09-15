@@ -3,19 +3,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
-class DetailCarsRoute extends MaterialPageRoute{
-  DetailCarsRoute() : super(builder: (BuildContext context) => new DetailCars());
-
-  @override
-  Widget buildPage(BuildContext context, Animation<double> animation, Animation<double> secondaryAnimation) {
-    return new FadeTransition(opacity: animation, child: new DetailCars(),);
-  }
-
-}
-
-
-
 class DetailCars extends StatefulWidget {
   const DetailCars({Key? key}) : super(key: key);
 
